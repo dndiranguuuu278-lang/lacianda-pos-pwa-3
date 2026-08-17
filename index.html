@@ -101,7 +101,8 @@
         if (userName) localStorage.setItem('userName', userName);
 
         // Display app interface
-        showPOSMainScreen();
+        window.location.href = "pin.html";
+        
 
       } catch (error) {
         console.error('Failed to parse Google Credential Token:', error);
