@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <title>Lacianda Wines and Spirits — POS</title>
+  <meta name="theme-color" content="#7c2d12" />
+  <meta name="description" content="Offline-first POS for Lacianda Wines and Spirits" />
+
+  <!-- PWA install support: this manifest + the service worker registered in
+       js/app.js is what lets Chrome/Edge offer "Install app" and turn this
+       into a standalone desktop window with no browser chrome. -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/favicon.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="boot-message">Loading Lacianda POS…</div>
+  </div>
+
+  <!-- Native ES modules — no bundler required. Every browser released in
+       the last several years supports type="module" directly. -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
